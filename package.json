@@ -1,0 +1,17 @@
+{
+  "name": "choose-theme",
+  "description": "A change-theme widget",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/twilson63/pages-theme-widget.git",
+  "author": "Tom Wilson <tom@hyper.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@bundlr-network/client": "^0.10.3",
+    "esbuild": "^0.17.7"
+  },
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --outdir=dist",
+    "deploy": "node deploy.mjs ./wallet.json"
+  }
+}
